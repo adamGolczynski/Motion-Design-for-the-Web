@@ -81,12 +81,9 @@
 			color: #FFBF1A;
 		}
 
-		/* Air */
-
 		video {
 			position: absolute;
-			top: 0;
-			left: 0;
+			inset: 0;
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
@@ -98,8 +95,10 @@
 <body>
 	<section id="hero">
 		<div class="container">
-			<video src="./videos/video3.mp4" autoplay muted loop></video>
-			<!-- Air -->
+			<video autoplay muted loop>
+				<source src="./videos/video3.mp4" type="video/mp4">
+				<source src="./videos/Video3.webm" type="video/webm">
+			</video>
 
 
 			<header>
